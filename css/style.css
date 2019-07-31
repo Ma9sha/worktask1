@@ -10,19 +10,50 @@ main {
   background-color: lightgray;
 }
 
-section {
-  margin: 1rem auto 0;
-  padding: 5px 8px;
+h1 {
+  font-size: 2rem;
 }
 
-figure {
-  margin: 0;
+.flex-container {
+  margin: 1rem auto 0;
 }
+
+.picture-item {
+  margin-top: 1rem;
+}
+
 
 figure img {
-  width: 50%;
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figure div {
+  background-color: azure;
 }
 
 footer {
   padding: 1rem;
 }
+
+@media screen and (min-width: 700px) {
+  .flex-container {
+    display: flex;
+  }
+  .picture-item:first-child {
+    margin-right: 1rem;
+  }
+  .picture-item:last-child {
+    margin-left: 1rem;
+  }
+}
+
+
+/*@media screen and (min-width: 50rem) {
+  main {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+}*/
