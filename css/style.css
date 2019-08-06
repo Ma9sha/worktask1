@@ -10,6 +10,29 @@
   max-width: 80rem;
   margin: 0 auto;
   padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menunav {
+  display: none;
+}
+
+.menunav.visible {
+  display: block;
+}
+
+.btn {
+  background-color: brown;
+  border: none;
+  border-radius: .25rem;
+  cursor: pointer;
+  display: block;
+  padding: .5rem;
+}
+
+.menuitem {
+  padding-right: .50rem;
 }
 
 .newmain {
@@ -63,4 +86,10 @@
   .picture-item:last-child {
     margin-left: 1rem;
   }
-}
+  .menunav {
+    display: flex;
+  }
+  .btn {
+    display: none;
+    }
+  }
